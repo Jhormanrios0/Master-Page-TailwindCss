@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Galería de Imágenes</title>
+  <title>Mun</title>
   <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
@@ -12,18 +12,110 @@
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
-<body class="p-8">
-  <header>
-    <nav>
-      <ul>
-        <li></li>
-      </ul>
-    </nav>
+<body class="p-4 container mx-auto">
+
+  <header class="flex flex-col sticky top-0 z-[300] lg:relative bg-gris  lg:h-max lg:bg-white">
+
+
+
 
   </header>
 
-  <main>
 
+
+  <main class="flex flex-col container mx-auto p-2">
+
+    <!-- Preguntas Frecuentes -->
+    <section class="border-2">
+      <figure class="mx-auto w-full">
+        <img class="w-full h-full" src="./assets/img/preguntasFrecuentes.png" alt="Imagen preguntas Frecuentes">
+      </figure>
+    </section>
+    <!-- Preguntas Frecuentes -->
+
+    <!-- Section -->
+    <section class="container mx-auto border-2 border-black flex gap-1 p-1 w-full">
+      <!-- Primera parte  -->
+      <section class="w-[50%] border-2 border-blue-500 flex flex-col gap-2">
+        <article class="flex flex-col items-center p-6 bg-green-700">
+          <ul class="flex flex-col gap-3 w-full px-6 my-10">
+            <li
+              class="border-2 border-white text-white bg-transparent rounded-md py-4 px-4 text-start text-lg hover:bg-green-900 transition-all duration-300 cursor-pointer">
+              Inicio
+            </li>
+            <li
+              class="border-2 border-white text-white bg-transparent rounded-md py-4 px-4 text-start text-lg hover:bg-green-900 transition-all duration-300 cursor-pointer">
+              Normatividad
+            </li>
+            <li
+              class="border-2 border-white text-white bg-transparent rounded-md py-4 px-4 text-start text-lg hover:bg-green-900 transition-all duration-300 cursor-pointer">
+              Noticias
+            </li>
+            <li
+              class="border-2 border-white text-white bg-transparent rounded-md py-4 px-4 text-start text-lg hover:bg-green-900 transition-all duration-300 cursor-pointer">
+              Documentación
+            </li>
+          </ul>
+        </article>
+        <figure class="w-full h-full flex items-center justify-center">
+          <img class="w-full h-full object-cover" src="./assets/img/imagen1.png" alt="imagenUno">
+        </figure>
+      </section>
+      <!-- Primera parte  -->
+      <!-- Segunda parte  -->
+      <section class="w-[50%] border-2 border-blue-500">
+        <article class="flex flex-col bg-red-100 mx-auto py-8 px-3 gap-10">
+          <div class="flex flex-col gap-5">
+            <h3>¿Qué es el PBOT?</h3>
+            <span>El Plan Básico de ordenamiento Territorial es un instrumento para ordenar y desarrollar el territorio
+              de una manera armónica y concertada que propenda por darles unas mejores condiciones de vida a cada uno de
+              los habitantes.</span>
+          </div>
+          <div>
+            <h3>Visión Territorial</h3>
+            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, porro laudantium natus excepturi
+              at odio reiciendis, repellat, hic nostrum quia magni soluta cumque mollitia quidem dolore in modi ex
+              harum.</span>
+          </div>
+        </article>
+        <!-- Section ABC - PBOT -->
+        <section class="container mx-auto my-8">
+          <!-- Título -->
+          <article class="text-center mb-6">
+            <h3 class="text-3xl font-bold text-green-800">ABC - PBOT</h3>
+          </article>
+          <!-- preguntas -->
+          <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- 1 -->
+            <div class="bg-green-700 rounded-md flex items-center justify-center p-6 text-white text-center">
+              ¿Qué es PBOT?
+            </div>
+            <!-- 2 -->
+            <div class="bg-green-700 rounded-md flex items-center justify-center p-6 text-white text-center">
+              ¿Para qué sirve el PBOT?
+            </div>
+            <!-- 3 -->
+            <div class="bg-green-700 rounded-md flex items-center justify-center p-6 text-white text-center">
+              ¿Qué es el Ordenamiento del Territorio?
+            </div>
+            <!-- 4 -->
+            <div class="bg-green-700 rounded-md flex items-center justify-center p-6 text-white text-center">
+              ¿Qué temas contiene el PBOT?
+            </div>
+            <!-- 5 -->
+            <div class="bg-green-700 rounded-md flex items-center justify-center p-6 text-white text-center">
+              ¿Cómo beneficia el PBOT a Cota?
+            </div>
+            <!-- 6 -->
+            <div class="bg-green-700 rounded-md flex items-center justify-center p-6 text-white text-center">
+              ¿Por qué es importante que conozca el PBOT?
+            </div>
+          </section>
+        </section>
+      </section>
+      <!-- Segunda parte  -->
+    </section>
+    <!-- Section -->
   </main>
 
   <footer>
