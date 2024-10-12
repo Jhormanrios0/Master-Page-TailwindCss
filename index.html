@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Mun</title>
-
+  <link rel="stylesheet" href="./SplideSlider/splide.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./assets/css/style.css">
+  <script src="./SplideSlider/splide.min.js"></script>
 </head>
 
 <body class="p-4 container mx-auto">
@@ -26,7 +27,7 @@
   <main class="flex flex-col container mx-auto p-2">
 
     <!-- Preguntas Frecuentes -->
-    <section class="border-2">
+    <section class="mb-[50px]">
       <figure class="mx-auto w-full">
         <img class="w-full h-full" src="./assets/img/preguntasFrecuentes.png" alt="Imagen preguntas Frecuentes">
       </figure>
@@ -34,10 +35,10 @@
     <!-- Preguntas Frecuentes -->
 
     <!-- Section -->
-    <section class="container mx-auto  flex gap-1 p-1 w-full">
+    <section class="container mx-auto  flex gap-10 p-1 w-full">
       <!-- Primera parte  -->
-      <section class="w-[32%] flex flex-col gap-2">
-        <article class="flex flex-col items-center p-6 bg-primaryColor rounded-sm">
+      <section class="w-[32%] flex flex-col gap-4 rounded-lg ">
+        <article class="flex flex-col items-center p-6 bg-primaryColor rounded-lg">
           <ul class="flex flex-col gap-3 w-full px-6 my-10">
             <li
               class="border-2 border-white text-white bg-transparent rounded-md py-4 px-4 text-start text-lg hover:bg-green-900 transition-all duration-300 cursor-pointer">
@@ -63,17 +64,19 @@
       </section>
       <!-- Primera parte  -->
       <!-- Segunda parte  -->
-      <section class="w-[68%] border-2 border-blue-500">
-        <article class="flex flex-col bg-red-100 mx-auto py-8 px-3 gap-10">
-          <div class="flex flex-col gap-5">
-            <h3>¿Qué es el PBOT?</h3>
-            <span>El Plan Básico de ordenamiento Territorial es un instrumento para ordenar y desarrollar el territorio
+      <section class="w-[68%] ">
+        <article class="flex flex-col bg-[#eae9e9] mx-auto py-16 px-3 gap-16 rounded-lg">
+          <div class="flex flex-col gap-10  mx-10">
+            <h3 class="text-4xl text-primaryColor font-semibold ">¿Qué es el PBOT?</h3>
+            <span class="text-lg text-txtColor">El Plan Básico de ordenamiento Territorial es un instrumento para
+              ordenar y desarrollar el territorio
               de una manera armónica y concertada que propenda por darles unas mejores condiciones de vida a cada uno de
               los habitantes.</span>
           </div>
-          <div>
-            <h3>Visión Territorial</h3>
-            <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur, porro laudantium natus excepturi
+          <div class="flex flex-col mx-10 gap-10">
+            <h3 class="text-4xl text-primaryColor font-semibold">Visión Territorial</h3>
+            <span class="text-lg text-txtColor">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
+              porro laudantium natus excepturi
               at odio reiciendis, repellat, hic nostrum quia magni soluta cumque mollitia quidem dolore in modi ex
               harum.</span>
           </div>
@@ -81,34 +84,40 @@
         <!-- Section ABC - PBOT -->
         <section class="container mx-auto my-8">
           <!-- Título -->
-          <article class="text-center mb-6">
-            <h3 class="text-3xl font-bold text-green-800">ABC - PBOT</h3>
+          <article class="text-center my-14 ">
+            <h3 class="text-5xl font-bold text-primaryColor">ABC - PBOT</h3>
           </article>
           <!-- preguntas -->
-          <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <section class="grid grid-cols-1 md:grid-cols-3 gap-5  px-10">
             <!-- 1 -->
-            <div class="bg-green-700 rounded-md flex items-center justify-center p-6 text-white text-center">
-              ¿Qué es PBOT?
+            <div
+              class="bg-primaryColor rounded-md flex items-end justify-center p-6 text-white text-center h-[236px] w-[236px]">
+              <span class=" pb-6">¿Qué es PBOT?</span>
             </div>
             <!-- 2 -->
-            <div class="bg-green-700 rounded-md flex items-center justify-center p-6 text-white text-center">
-              ¿Para qué sirve el PBOT?
+            <div
+              class="bg-primaryColor rounded-md flex items-end justify-center p-6 text-white text-center h-[236px] w-[236px]">
+              <span class=" pb-6">¿Para qué sirve el PBOT?</span>
             </div>
             <!-- 3 -->
-            <div class="bg-green-700 rounded-md flex items-center justify-center p-6 text-white text-center">
-              ¿Qué es el Ordenamiento del Territorio?
+            <div
+              class="bg-primaryColor rounded-md flex items-end justify-center p-6 text-white text-center h-[236px] w-[236px]">
+              <span class=" pb-6">¿Qué es el Ordenamiento del Territorio?</span>
             </div>
             <!-- 4 -->
-            <div class="bg-green-700 rounded-md flex items-center justify-center p-6 text-white text-center">
-              ¿Qué temas contiene el PBOT?
+            <div
+              class="bg-primaryColor rounded-md flex items-end justify-center p-6 text-white text-center h-[236px] w-[236px]">
+              <span class=" pb-6">¿Qué temas contiene el PBOT?</span>
             </div>
             <!-- 5 -->
-            <div class="bg-green-700 rounded-md flex items-center justify-center p-6 text-white text-center">
-              ¿Cómo beneficia el PBOT a Cota?
+            <div
+              class="bg-primaryColor rounded-md flex items-end justify-center p-6 text-white text-center h-[236px] w-[236px]">
+              <span class=" pb-6">¿Cómo beneficia el PBOT a Cota?</span>
             </div>
             <!-- 6 -->
-            <div class="bg-green-700 rounded-md flex items-center justify-center p-6 text-white text-center">
-              ¿Por qué es importante que conozca el PBOT?
+            <div
+              class="bg-primaryColor rounded-md flex items-end justify-center p-6 text-white text-center h-[236px] w-[236px]">
+              <span class=" pb-6">¿Por qué es importante que conozca el PBOT?</span>
             </div>
           </section>
         </section>
@@ -116,6 +125,240 @@
       <!-- Segunda parte  -->
     </section>
     <!-- Section -->
+
+    <!-- Section -->
+    <section class="container mx-auto p-2">
+      <h3 class="flex items-center justify-center text-6xl font-semibold text-primaryColor py-12">Normatividad</h3>
+    </section>
+
+    <!-- Slider Normatividad -->
+    <div id="news-slider" class="splide container ">
+      <div class="splide__track">
+        <ul class="splide__list">
+          <li class="splide__slide">
+            <div class="max-w-md p-2 bg-white border border-gray-200 rounded-xl shadow relative">
+              <figure class=" w-full">
+                <img class="rounded-t-lg w-full" src="./assets/img/1.png" alt="" />
+              </figure>
+              <span
+                class="date absolute top-0 h-12 w-62 mt-2 text-center rounded-tl-xl bg-primaryColor text-white font-bold p-4">Enero
+                30. 2024</span>
+              <div class="p-5">
+                <p class="mb-3 text-black font-semibold py-10">Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the...</p>
+                <a href=""
+                  class="more h-10 w-48 inline-block bg-white flex items-start justify-between hover:bg-gray-100 text-gray-800 font-semibold shadow">
+                  <span class="icono__ver_mas-noticias bg-primaryColor w-12 h-full flex justify-center text-center">
+                    <img src="./assets/icons/icono-ver-mas-noticias.svg" class="h-1/2 w-1/2 m-auto" alt="">
+                  </span>
+                  <h6 class="text-primaryColor w-full block text-center px-2 text-center m-auto">Conoce más</h6>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="max-w-md p-2 bg-white border border-gray-200 rounded-xl shadow relative">
+              <figure class=" w-full">
+                <img class="rounded-t-lg w-full" src="./assets/img/2.png" alt="" />
+              </figure>
+              <span
+                class="date absolute top-0 h-12 w-62 mt-2 text-center rounded-tl-xl bg-primaryColor text-white font-bold p-4">Enero
+                30. 2024</span>
+              <div class="p-5">
+                <p class="mb-3 text-black font-semibold py-10">Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the...</p>
+                <a href=""
+                  class="more h-10 w-48 inline-block bg-white flex items-start justify-between hover:bg-gray-100 text-gray-800 font-semibold shadow">
+                  <span class="icono__ver_mas-noticias bg-primaryColor w-12 h-full flex justify-center text-center">
+                    <img src="./assets/icons/icono-ver-mas-noticias.svg" class="h-1/2 w-1/2 m-auto" alt="">
+                  </span>
+                  <h6 class="text-primaryColor w-full block text-center px-2 text-center m-auto">Conoce más</h6>
+                </a>
+              </div>
+            </div>
+          </li>
+          <li class="splide__slide">
+            <div class="max-w-md p-2 bg-white border border-gray-200 rounded-xl shadow relative">
+              <figure class=" w-full">
+                <img class="rounded-t-lg w-full" src="./assets/img/3.png" alt="" />
+              </figure>
+              <span
+                class="date absolute top-0 h-12 w-62 mt-2 text-center rounded-tl-xl bg-primaryColor text-white font-bold p-4">Enero
+                30. 2024</span>
+              <div class="p-5">
+                <p class="mb-3 text-black font-semibold py-10">Lorem Ipsum is simply dummy text of the printing and
+                  typesetting industry. Lorem Ipsum has been the...</p>
+                <a href=""
+                  class="more h-10 w-48 inline-block bg-white flex items-start justify-between hover:bg-gray-100 text-gray-800 font-semibold shadow">
+                  <span class="icono__ver_mas-noticias bg-primaryColor w-12 h-full flex justify-center text-center">
+                    <img src="./assets/icons/icono-ver-mas-noticias.svg" class="h-1/2 w-1/2 m-auto" alt="">
+                  </span>
+                  <h6 class="text-primaryColor w-full block text-center px-2 text-center m-auto">Conoce más</h6>
+                </a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        new Splide('#news-slider', {
+          type: 'loop',
+          perPage: 3,
+          autoplay: true,
+          interval: 3000,
+          gap: '1rem', // Optional: Adds space between slides
+          breakpoints: {
+            768: {
+              perPage: 1,
+            },
+            1024: {
+              perPage: 2,
+            },
+          },
+        }).mount();
+      });
+    </script>
+    <!-- Slider Normatividad -->
+    <h4 class="text-6xl font-semibold p-2 text-primaryColor my-10 ">Noticias</h4>
+    <section
+      class=" h-auto w-full px-10 mb-5 p-10 flex flex-col items-center relative lg:container lg:px-5 mx-auto border-4 border-sky-700 ">
+
+      <div
+        class="border border-red-500 first__new transition-all duration-500 h-auto w-full md:w-4/5 rounded-lg bg-primaryColor mb-20 lg:bg-white lg:w-full flex justify-center items-center relative flex-col gap-10 lg:h-heightFirstNew  lg:flex-row">
+
+        <div
+          class="image__new w-full transition-all duration-500 scale-x-110 relative top-10 ma-auto  h-1/2  flex items-center flex-col justify-center lg:top-0 lg:relative z-50 rounded-md lg:translate-x-5 lg:flex-row lg:w-1/2 lg:h-4/5">
+
+          <img src="./assets/img/Group 2872.png" alt=""
+            class="w-full shadow-md shadow-black object-cover rounded-t-md lg:rounded-md lg:h-full ">
+        </div>
+        <div
+          class="texts__new pt-10 transition-all duration-500 w-full h-auto p-4 relative bg-primaryColor  rounded-md flex lg:bottom-0 lg:py-12 justify-center items-center lg:h-full lg:scale-x-110  lg:-translate-x-5  lg:w-1/2 lg:pl-20">
+          <div
+            class="content_texts h-auto w-full  m-auto flex flex-col items-start justify-evenly lg:w-95% xl:h-full xl:pl-4">
+
+            <div>
+
+              <span
+                class="bg-yellow-500 -tr text-black w-40 h-12 text-md text-center flex items-center font-medium me-2 px-2.5">Febrero
+                30, 2023</span>
+              <h4 class="title__new -tr w-full text-white mt-4 text-2xl">
+                Lorem Ipsum is simply
+                dummy text of the printing
+                and typesetting industry.
+              </h4>
+            </div>
+
+            <p class="description__new w-full text-white text-xl">
+              Lorem Ipsum is simply dummy text of the
+              printing and typesetting industry. Lorem Ipsum
+              has been the industry's standard dummy text
+              ever since the 1500s, when an unknown printer
+              took a galley of type and scrambled it to make a
+              type specimen book. It has survived not only
+              five centuries, but also the leap into electronic
+              typesetting, remaining essentially unchanged.
+            </p>
+            <a href=""
+              class="more h-12 w-48 inline-block bg-white flex items-start justify-between hover:bg-gray-100 text-gray-800 font-semibold shadow">
+              <span class="icono__ver_mas-noticias bg-thirdColor w-12 h-full flex justify-center text-center">
+                <img src="./assets/icons/icono-ver-mas-noticias.svg" class="h-1/2 w-1/2 m-auto" alt="">
+              </span>
+              <h6 class="text-primaryColor w-full block text-center px-2  m-auto">Conoce más</h6>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <article class="w-full h-32 my-10 p-4 p-white lg:px-8 ">
+        <div class="full bg-primaryColor m-auto w-full rounded-xl h-4/5 flex items-center justify-center">
+          <a href="#" class="inline-block w-fu7l text-center flex m-auto justify-center items-center p-2 lg:w-1/2">
+            <figure class="w-12  h-12 inline bg-white rounded-full flex items-center justify-center p-2">
+              <img src="./assets/icons/icono-ver-mas-noticias2.svg" class="full w-full" alt="">
+            </figure>
+            <span class="text-lg text-white w-1/2 font-semibold mx-5 lg:w-auto">VER MÁS NOTICIAS</span>
+          </a>
+
+        </div>
+
+
+      </article>
+
+
+      <!-- Slider Noticias -->
+          <!-- Nuevo Slider -->
+          <div id="new-slider" class="splide container mt-10">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide">
+                  <div class="max-w-md p-2 bg-white border border-gray-200 rounded-xl shadow relative">
+                    <figure class="w-full">
+                      <img class="rounded-t-lg w-full" src="./assets/img/4.png" alt="" />
+                    </figure>
+                    <span class="date absolute top-0 h-12 w-62 mt-2 text-center rounded-tl-xl bg-primaryColor text-white font-bold p-4">Febrero 15. 2024</span>
+                    <div class="p-5">
+                      <p class="mb-3 text-black font-semibold py-10">Nuevo contenido para el slider. Lorem Ipsum es simplemente texto ficticio de la industria de la impresión y la composición tipográfica.</p>
+                      <a href="" class="more h-10 w-48 inline-block bg-white flex items-start justify-between hover:bg-gray-100 text-gray-800 font-semibold shadow">
+                        <span class="icono__ver_mas-noticias bg-primaryColor w-12 h-full flex justify-center text-center">
+                          <img src="./assets/icons/icono-ver-mas-noticias.svg" class="h-1/2 w-1/2 m-auto" alt="">
+                        </span>
+                        <h6 class="text-primaryColor w-full block text-center px-2 text-center m-auto">Conoce más</h6>
+                      </a>
+                    </div>
+                  </div>
+                </li>
+                <!-- Añadir más slides aquí -->
+              </ul>
+            </div>
+          </div>
+          <script>
+            document.addEventListener('DOMContentLoaded', function () {
+              new Splide('#new-slider', {
+                type: 'loop',
+                perPage: 3,
+                autoplay: true,
+                interval: 3000,
+                gap: '1rem', // Optional: Adds space between slides
+                breakpoints: {
+                  768: {
+                    perPage: 1,
+                  },
+                  1024: {
+                    perPage: 2,
+                  },
+                },
+              }).mount();
+            });
+          </script>
+      <!-- Slider Noticias -->
+    </section>
+    <!-- Section -->
+
+
+    <!-- section Documentación -->
+    <section class="flex gap-8 items-center container mx-auto">
+      <div class="text-center">
+        <h1 class="text-2xl font-semibold text-green-700 mb-6">Documentación</h1>
+        <div class="flex gap-6">
+          <!-- Tarjeta 1 -->
+          <div class="bg-green-600 rounded-lg p-6 w-40 h-40 flex flex-col items-center">
+            <img src="./assets/img/PBOT Actual.png" alt="PBOT actual" class="w-20 h-20 mb-2">
+            <p class="text-white font-medium">PBOT actual</p>
+          </div>
+          <!-- Tarjeta 2 -->
+          <div class="bg-green-600 rounded-lg p-6 w-40 h-40 flex flex-col items-center">
+            <img src="./assets/img/asiva.png" alt="Así va" class="w-20 h-20 mb-2">
+            <p class="text-white font-medium">Así va</p>
+          </div>
+        </div>
+      </div>
+      <img src="./assets/img/imagen1.png" alt="Iglesia" class="w-64 h-auto rounded-lg shadow-md">
+    </section>
+
+    <!-- section Documentación -->
+
   </main>
 
   <footer>
