@@ -221,12 +221,12 @@
       });
     </script>
     <!-- Slider Normatividad -->
-    <h4 class="text-6xl font-semibold p-2 text-primaryColor my-10 ">Noticias</h4>
+    <h4 class="ml-8 text-6xl font-semibold p-2 text-primaryColor my-10 ">Noticias</h4>
     <section
-      class=" h-auto w-full px-10 mb-5 p-10 flex flex-col items-center relative lg:container lg:px-5 mx-auto border-4 border-sky-700 ">
+      class=" h-auto w-full px-10 mb-5 p-10 flex flex-col items-center relative lg:container lg:px-5 mx-auto">
 
       <div
-        class="border border-red-500 first__new transition-all duration-500 h-auto w-full md:w-4/5 rounded-lg bg-primaryColor mb-20 lg:bg-white lg:w-full flex justify-center items-center relative flex-col gap-10 lg:h-heightFirstNew  lg:flex-row">
+        class="first__new transition-all duration-500 h-auto w-full md:w-4/5 rounded-lg bg-primaryColor mb-20 lg:bg-white lg:w-full flex justify-center items-center relative flex-col gap-10 lg:h-heightFirstNew  lg:flex-row">
 
         <div
           class="image__new w-full transition-all duration-500 scale-x-110 relative top-10 ma-auto  h-1/2  flex items-center flex-col justify-center lg:top-0 lg:relative z-50 rounded-md lg:translate-x-5 lg:flex-row lg:w-1/2 lg:h-4/5">
@@ -288,75 +288,86 @@
 
 
       <!-- Slider Noticias -->
-          <!-- Nuevo Slider -->
-          <div id="new-slider" class="splide container mt-10">
-            <div class="splide__track">
-              <ul class="splide__list">
-                <li class="splide__slide">
-                  <div class="max-w-md p-2 bg-white border border-gray-200 rounded-xl shadow relative">
-                    <figure class="w-full">
-                      <img class="rounded-t-lg w-full" src="./assets/img/4.png" alt="" />
-                    </figure>
-                    <span class="date absolute top-0 h-12 w-62 mt-2 text-center rounded-tl-xl bg-primaryColor text-white font-bold p-4">Febrero 15. 2024</span>
-                    <div class="p-5">
-                      <p class="mb-3 text-black font-semibold py-10">Nuevo contenido para el slider. Lorem Ipsum es simplemente texto ficticio de la industria de la impresión y la composición tipográfica.</p>
-                      <a href="" class="more h-10 w-48 inline-block bg-white flex items-start justify-between hover:bg-gray-100 text-gray-800 font-semibold shadow">
-                        <span class="icono__ver_mas-noticias bg-primaryColor w-12 h-full flex justify-center text-center">
-                          <img src="./assets/icons/icono-ver-mas-noticias.svg" class="h-1/2 w-1/2 m-auto" alt="">
-                        </span>
-                        <h6 class="text-primaryColor w-full block text-center px-2 text-center m-auto">Conoce más</h6>
-                      </a>
-                    </div>
-                  </div>
-                </li>
-                <!-- Añadir más slides aquí -->
-              </ul>
-            </div>
-          </div>
-          <script>
-            document.addEventListener('DOMContentLoaded', function () {
-              new Splide('#new-slider', {
-                type: 'loop',
-                perPage: 3,
-                autoplay: true,
-                interval: 3000,
-                gap: '1rem', // Optional: Adds space between slides
-                breakpoints: {
-                  768: {
-                    perPage: 1,
-                  },
-                  1024: {
-                    perPage: 2,
-                  },
-                },
-              }).mount();
-            });
-          </script>
+      <!-- Nuevo Slider -->
+      <div id="new-slider" class="splide container mt-10">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <div class="max-w-md p-2 bg-white border border-gray-200 rounded-xl shadow relative">
+                <figure class="w-full">
+                  <img class="rounded-t-lg w-full" src="./assets/img/4.png" alt="" />
+                </figure>
+                <span
+                  class="date absolute top-0 h-12 w-62 mt-2 text-center rounded-tl-xl bg-primaryColor text-white font-bold p-4">Febrero
+                  15. 2024</span>
+                <div class="p-5">
+                  <p class="mb-3 text-black font-semibold py-10">Nuevo contenido para el slider. Lorem Ipsum es
+                    simplemente texto ficticio de la industria de la impresión y la composición tipográfica.</p>
+                  <a href=""
+                    class="more h-10 w-48 inline-block bg-white flex items-start justify-between hover:bg-gray-100 text-gray-800 font-semibold shadow">
+                    <span class="icono__ver_mas-noticias bg-primaryColor w-12 h-full flex justify-center text-center">
+                      <img src="./assets/icons/icono-ver-mas-noticias.svg" class="h-1/2 w-1/2 m-auto" alt="">
+                    </span>
+                    <h6 class="text-primaryColor w-full block text-center px-2 text-center m-auto">Conoce más</h6>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <!-- Añadir más slides aquí -->
+          </ul>
+        </div>
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          new Splide('#new-slider', {
+            type: 'loop',
+            perPage: 3,
+            autoplay: true,
+            interval: 3000,
+            gap: '1rem', // Optional: Adds space between slides
+            breakpoints: {
+              768: {
+                perPage: 1,
+              },
+              1024: {
+                perPage: 2,
+              },
+            },
+          }).mount();
+        });
+      </script>
       <!-- Slider Noticias -->
     </section>
     <!-- Section -->
 
 
     <!-- section Documentación -->
-    <section class="flex gap-8 items-center container mx-auto">
-      <div class="text-center">
-        <h1 class="text-2xl font-semibold text-green-700 mb-6">Documentación</h1>
-        <div class="flex gap-6">
-          <!-- Tarjeta 1 -->
-          <div class="bg-green-600 rounded-lg p-6 w-40 h-40 flex flex-col items-center">
-            <img src="./assets/img/PBOT Actual.png" alt="PBOT actual" class="w-20 h-20 mb-2">
-            <p class="text-white font-medium">PBOT actual</p>
-          </div>
-          <!-- Tarjeta 2 -->
-          <div class="bg-green-600 rounded-lg p-6 w-40 h-40 flex flex-col items-center">
-            <img src="./assets/img/asiva.png" alt="Así va" class="w-20 h-20 mb-2">
-            <p class="text-white font-medium">Así va</p>
-          </div>
+    <section class="flex gap-8 container mx-auto">
+      <div class="text-center w-[70%] flex flex-col items-center">
+
+
+
+        <div class="flex flex-col gap-2 justify-center my-auto">
+          <h3 class="text-5xl font-semibold text-green-700 mb-6">Documentación</h3>
+          <section class="flex gap-6">
+            <!-- Tarjeta 1 -->
+            <div class="bg-green-600 rounded-lg p-6 w-[200px] h-[200px] flex flex-col items-center">
+              <img src="./assets/img/PBOT Actual.png" alt="PBOT actual" class="w-20 h-20 mb-2">
+              <p class="text-white font-medium">PBOT actual</p>
+            </div>
+            <!-- Tarjeta 2 -->
+            <div class="bg-green-600 rounded-lg p-6 w-[200px] h-[200px] flex flex-col items-center">
+              <img src="./assets/img/asiva.png" alt="Así va" class="w-20 h-20 mb-2">
+              <p class="text-white font-medium">Así va</p>
+            </div>
+          </section>
+
         </div>
       </div>
-      <img src="./assets/img/imagen1.png" alt="Iglesia" class="w-64 h-auto rounded-lg shadow-md">
+      <figure class="w-[30%] ">
+        <img src="./assets/img/imagen1.png" alt="Iglesia" class="w-full h-full object-cover rounded-lg shadow-md">
+      </figure>
     </section>
-
     <!-- section Documentación -->
 
   </main>
